@@ -15,7 +15,8 @@ app.get('/', (req, res) => {
         message: 'H3 API Server is running',
         endpoints: {
             'GET /h3': 'Generate H3 hex from lat, lon, and resolution',
-            'POST /h3': 'Generate H3 hex from JSON body'
+            'POST /h3': 'Generate H3 hex from JSON body',
+            'GET /h3/:h3Index/neighbors': 'Get neighbors of an H3 hex'
         }
     });
 });
