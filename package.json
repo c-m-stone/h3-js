@@ -37,6 +37,7 @@
     "build-emscripten": "yarn build-update-h3 && yarn docker-emscripten",
     "build-legacy": "node scripts/build-legacy-api.js",
     "build-docs": "jsdoc2md --no-cache --global-index-format grouped --partial doc-files/scope.hbs --helper ./doc-files/insert-version.js --separators --template doc-files/README.tmpl.md lib/h3core.js lib/errors.js > README.md",
+    "build": "yarn dist",
     "build-tsd-core": "tsc lib/h3core.js --noResolve --skipLibCheck --allowJs --declaration --emitDeclarationOnly --outFile dist/types.d.ts && bash scripts/postprocess-types.sh",
     "build-tsd-legacy": "node scripts/build-legacy-types.js",
     "build-tsd": "yarn build-tsd-core && yarn build-tsd-legacy",
