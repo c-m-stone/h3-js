@@ -1,16 +1,22 @@
 {
-  "name": "h3-js",
+  "name": "h3",
   "version": "4.3.0",
   "description": "Pure-Javascript version of the H3 library, a hexagon-based geographic grid system",
   "author": "Nick Rabinowitz <nickr@uber.com>",
   "contributors": [
-    "David Ellis <isv.damocles@gmail.com>",
-    "Isaac Brodsky <isaac@isaacbrodsky.com>"
+    {
+      "name": "David Ellis",
+      "email": "isv.damocles@gmail.com"
+    },
+    {
+      "name": "Isaac Brodsky",
+      "email": "isaac@isaacbrodsky.com"
+    }
   ],
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/uber/h3-js.git"
+    "url": "git+https://github.com/uber/h3-js.git"
   },
   "keywords": [
     "h3",
@@ -107,5 +113,17 @@
       "**/test/**"
     ]
   },
-  "dependencies": {}
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "bugs": {
+    "url": "https://github.com/uber/h3-js/issues"
+  },
+  "homepage": "https://github.com/uber/h3-js#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "h3-js": "^4.3.0"
+  }
 }
